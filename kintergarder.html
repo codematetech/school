@@ -24,42 +24,48 @@
     <header>
       <nav>
         <div class="nav-wrapper">
-          <a href="#!" class="brand-logo grey-text text-darken-4" name="home">
-            <img src="./images/photo(1).ls" alt="logo" />
-          </a>
-          <ul
-            class="right hide-on-med-and-down grey-text text-darken-4 hide-on-med-and-down"
-          >
-            <li>
-              <a href="/index.html">Home</a>
-            </li>
-            <li>
-              <a href="./admission.html">Admission</a>
-            </li>
+          <a href="#!" class="brand-logo">Logo</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./admission.html">Admission</a></li>
             <li>
               <a class="dropdown-trigger" data-target="dropdown2"
                 >Programs<i class="material-icons right">arrow_drop_down</i></a
               >
             </li>
-            <li>
-              <a href="./gallary.html">Gallery</a>
-            </li>
-
-            <!-- Dropdown Trigger -->
+            <li><a href="mobile.html">Gallery</a></li>
             <li>
               <a class="dropdown-trigger" data-target="dropdown1"
-                >About Us<i class="material-icons right">arrow_drop_down</i></a
+                >About<i class="material-icons right">arrow_drop_down</i></a
               >
             </li>
             <li>
               <a href="./contact.html" class="">Contact Us</a>
             </li>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-              ><i class="material-icons">menu</i></a
-            >
           </ul>
         </div>
       </nav>
+    
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./admission.html">Admission</a></li>
+        <li>
+              <a class="dropdown-trigger" data-target="dropdown2"
+                >Programs<i class="material-icons right">arrow_drop_down</i></a
+              >
+            </li>
+        <li><a href="./gallary.html">Gallery</a></li>
+        <li>
+          <a class="dropdown-trigger" data-target="dropdown1"
+            >About<i class="material-icons right">arrow_drop_down</i></a
+          >
+        </li>
+        <li>
+          <a href="./contact.html" class="">Contact Us</a>
+        </li>
+      </ul>
+      
       <!-- dropdown content -->
       <ul id="dropdown1" class="dropdown-content">
         <li><a href="#!">Legacy</a></li>

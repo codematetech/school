@@ -28,49 +28,48 @@
   <header>
     <nav>
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo grey-text text-darken-4" name="home">
-          <img src="./images/photo(1).ls" alt="logo" />
-        </a>
-        <ul
-          class="right hide-on-med-and-down grey-text text-darken-4 hide-on-med-and-down"
-        >
+        <a href="#!" class="brand-logo">Logo</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./admission.html">Admission</a></li>
           <li>
-            <a href="/index.html">Home</a>
-          </li>
-          <li>
-            <a href="./admission.html">Admission</a>
-          </li>
-          <li>
-            <a
-              class="dropdown-trigger "
-              data-target="dropdown2"
+            <a class="dropdown-trigger" data-target="dropdown2"
               >Programs<i class="material-icons right">arrow_drop_down</i></a
             >
           </li>
+          <li><a href="mobile.html">Gallery</a></li>
           <li>
-            <a href="./gallary.html">Gallery</a>
-          </li>
-
-          <!-- Dropdown Trigger -->
-          <li>
-            <a
-              class="dropdown-trigger "
-              data-target="dropdown1"
-              >About Us<i class="material-icons right">arrow_drop_down</i></a
+            <a class="dropdown-trigger" data-target="dropdown1"
+              >About<i class="material-icons right">arrow_drop_down</i></a
             >
           </li>
           <li>
             <a href="./contact.html" class="">Contact Us</a>
           </li>
-          <a
-            href="#"
-            data-target="mobile-demo"
-            class="sidenav-trigger "
-            ><i class="material-icons">menu</i></a
-          >
         </ul>
       </div>
     </nav>
+  
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./admission.html">Admission</a></li>
+      <li>
+            <a class="dropdown-trigger" data-target="dropdown2"
+              >Programs<i class="material-icons right">arrow_drop_down</i></a
+            >
+          </li>
+      <li><a href="./gallary.html">Gallery</a></li>
+      <li>
+        <a class="dropdown-trigger" data-target="dropdown1"
+          >About<i class="material-icons right">arrow_drop_down</i></a
+        >
+      </li>
+      <li>
+        <a href="./contact.html" class="">Contact Us</a>
+      </li>
+    </ul>
+    
     <!-- dropdown content -->
     <ul id="dropdown1" class="dropdown-content">
       <li><a href="#!">Legacy</a></li>
@@ -91,43 +90,43 @@
     <h2>ADMISSION FORM</h2>
       <form class="col">
         <div class="row my-10">
-          <div class="input-field col s4">
+          <div class="input-field col s12 m6 l4">
             <input id="first_name" type="text" class="validate">
             <label for="first_name">First Name</label>
           </div>
-          <div class="input-field col s4">
+          <div class="input-field col s12 m6 l4">
             <input id="last_name" type="text" class="validate">
             <label for="last_name">Last Name</label>
           </div>
-          <div class="input-field col s4">
+          <div class="input-field col s12 m6 l4">
             <input id="email" type="email" class="validate">
             <label for="email">Email</label>
           </div>
         </div>
         <div class="row">
-          <div class="input-field col s4">
+          <div class="input-field col s12 m6 l4">
             <input id="mobile" type="text" class="validate">
             <label for="mobile">Mobile</label>
           </div>
-          <div class="input-field col s4">
+          <div class="input-field col s12 m6 l4">
             <input id="country-code" type="text" class="validate">
             <label for="country-code">Country Code</label>
           </div>
-          <div class="input-field col s4">
+          <div class="input-field col s12 m6 l4">
             <input id="addition-mobile" type="text" class="validate">
             <label for="addition-mobile">Additinal Mobile</label>
           </div>
         </div>
         <div class="row">
-          <div class="input-field col s4">
+          <div class="input-field col s12 m6 l4">
             <input id="country" type="text" class="validate">
             <label for="country">Country</label>
           </div>
-          <div class="input-field col s4">
+          <div class="input-field col s12 m6 l4">
             <input id="state" type="text" class="validate">
             <label for="state">State/District</label>
           </div>
-          <div class="input-field col s4">
+          <div class="input-field col s12 m6 l4">
             <input id="city" type="text" class="validate">
             <label for="city">City</label>
           </div>

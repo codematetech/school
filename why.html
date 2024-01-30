@@ -40,45 +40,65 @@
 <body class="sub_page">
   <div class="top_container ">
     <!-- header section strats -->
-    <header class="header_section">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <span>
-              Fanadesh
-            </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="about.html"> About </a>
-                </li>
-
-                <li class="nav-item ">
-                  <a class="nav-link" href="admission.html"> Admission </a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="why.html"> Why Us </a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-
-              </ul>
-            </div>
-        </nav>
-      </div>
+    <header>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Logo</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./admission.html">Admission</a></li>
+            <li>
+              <a class="dropdown-trigger" data-target="dropdown2"
+                >Programs<i class="material-icons right">arrow_drop_down</i></a
+              >
+            </li>
+            <li><a href="mobile.html">Gallery</a></li>
+            <li>
+              <a class="dropdown-trigger" data-target="dropdown1"
+                >About<i class="material-icons right">arrow_drop_down</i></a
+              >
+            </li>
+            <li>
+              <a href="./contact.html" class="">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./admission.html">Admission</a></li>
+        <li>
+              <a class="dropdown-trigger" data-target="dropdown2"
+                >Programs<i class="material-icons right">arrow_drop_down</i></a
+              >
+            </li>
+        <li><a href="./gallary.html">Gallery</a></li>
+        <li>
+          <a class="dropdown-trigger" data-target="dropdown1"
+            >About<i class="material-icons right">arrow_drop_down</i></a
+          >
+        </li>
+        <li>
+          <a href="./contact.html" class="">Contact Us</a>
+        </li>
+      </ul>
+      
+      <!-- dropdown content -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">Legacy</a></li>
+        <li><a href="#!">Mission & Vision</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Our Approach</a></li>
+      </ul>
+      <ul id="dropdown2" class="dropdown-content">
+        <li><a href="./nursery.html">Nursery</a></li>
+        <li><a href="./kintergarder.html">Kindergarten</a></li>
+        <li><a href="./daycare.html">Day Care</a></li>
+        <li class="divider"></li>
+        <li><a href="./teacherstraning.html">Teachers Training</a></li>
+      </ul>
     </header>
   </div>
   <!-- end header section -->

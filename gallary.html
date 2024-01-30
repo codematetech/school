@@ -33,6 +33,15 @@
         width: 80%;
         margin: 0% auto;
       }
+      @media screen and (max-width: 786px){
+        .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 80%;
+        margin: 0% auto;
+      }
+      }
       .container a{
         width: 300px;
         height: 200px;
@@ -48,49 +57,48 @@
   <header>
     <nav>
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo grey-text text-darken-4" name="home">
-          <img src="./images/photo(1).ls" alt="logo" />
-        </a>
-        <ul
-          class="right hide-on-med-and-down grey-text text-darken-4 hide-on-med-and-down"
-        >
+        <a href="#!" class="brand-logo">Logo</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./admission.html">Admission</a></li>
           <li>
-            <a href="/index.html">Home</a>
-          </li>
-          <li>
-            <a href="./admission.html">Admission</a>
-          </li>
-          <li>
-            <a
-              class="dropdown-trigger "
-              data-target="dropdown2"
+            <a class="dropdown-trigger" data-target="dropdown2"
               >Programs<i class="material-icons right">arrow_drop_down</i></a
             >
           </li>
+          <li><a href="mobile.html">Gallery</a></li>
           <li>
-            <a href="./gallary.html">Gallery</a>
-          </li>
-
-          <!-- Dropdown Trigger -->
-          <li>
-            <a
-              class="dropdown-trigger "
-              data-target="dropdown1"
-              >About Us<i class="material-icons right">arrow_drop_down</i></a
+            <a class="dropdown-trigger" data-target="dropdown1"
+              >About<i class="material-icons right">arrow_drop_down</i></a
             >
           </li>
           <li>
             <a href="./contact.html" class="">Contact Us</a>
           </li>
-          <a
-            href="#"
-            data-target="mobile-demo"
-            class="sidenav-trigger "
-            ><i class="material-icons">menu</i></a
-          >
         </ul>
       </div>
     </nav>
+  
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./admission.html">Admission</a></li>
+      <li>
+            <a class="dropdown-trigger" data-target="dropdown2"
+              >Programs<i class="material-icons right">arrow_drop_down</i></a
+            >
+          </li>
+      <li><a href="./gallary.html">Gallery</a></li>
+      <li>
+        <a class="dropdown-trigger" data-target="dropdown1"
+          >About<i class="material-icons right">arrow_drop_down</i></a
+        >
+      </li>
+      <li>
+        <a href="./contact.html" class="">Contact Us</a>
+      </li>
+    </ul>
+    
     <!-- dropdown content -->
     <ul id="dropdown1" class="dropdown-content">
       <li><a href="#!">Legacy</a></li>
@@ -132,5 +140,7 @@
     </article>
   </section>
     <script src="./lightbox-plus-jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
