@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission</title>
+  <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body{
+        overflow: hidden;
+      }
+    </style>
+</head>
+<body>
+  <!-- header content -->
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo grey-text text-darken-4" name="home">
+          <img src="./images/photo(1).ls" alt="logo" />
+        </a>
+        <ul
+          class="right hide-on-med-and-down grey-text text-darken-4 hide-on-med-and-down"
+        >
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+          <li>
+            <a href="./admission.html">Admission</a>
+          </li>
+          <li>
+            <a
+              class="dropdown-trigger "
+              data-target="dropdown2"
+              >Programs<i class="material-icons right">arrow_drop_down</i></a
+            >
+          </li>
+          <li>
+            <a href="./gallary.html">Gallery</a>
+          </li>
+
+          <!-- Dropdown Trigger -->
+          <li>
+            <a
+              class="dropdown-trigger "
+              data-target="dropdown1"
+              >About Us<i class="material-icons right">arrow_drop_down</i></a
+            >
+          </li>
+          <li>
+            <a href="./contact.html" class="">Contact Us</a>
+          </li>
+          <a
+            href="#"
+            data-target="mobile-demo"
+            class="sidenav-trigger "
+            ><i class="material-icons">menu</i></a
+          >
+        </ul>
+      </div>
+    </nav>
+    <!-- dropdown content -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">Legacy</a></li>
+      <li><a href="#!">Mission & Vision</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Our Approach</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="./nursery.html">Nursery</a></li>
+      <li><a href="./kintergarder.html">Kindergarten</a></li>
+      <li><a href="./daycare.html">Day Care</a></li>
+      <li class="divider"></li>
+      <li><a href="./teacherstraning.html">Teachers Training</a></li>
+    </ul>
+  </header>
+  <!-- content -->
+  <section class="content">
+    <h2>ADMISSION FORM</h2>
+      <form class="col">
+        <div class="row my-10">
+          <div class="input-field col s4">
+            <input id="first_name" type="text" class="validate">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Last Name</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s4">
+            <input id="mobile" type="text" class="validate">
+            <label for="mobile">Mobile</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="country-code" type="text" class="validate">
+            <label for="country-code">Country Code</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="addition-mobile" type="text" class="validate">
+            <label for="addition-mobile">Additinal Mobile</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s4">
+            <input id="country" type="text" class="validate">
+            <label for="country">Country</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="state" type="text" class="validate">
+            <label for="state">State/District</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="city" type="text" class="validate">
+            <label for="city">City</label>
+          </div>
+        </div>
+        <div class="butt">
+          <a class="waves-effect waves-light red btn">Reset</a>
+        <a class="waves-effect waves-light btn ">Submit</a>
+        </div>
+      </form>
+  </section>
+  <!-- footer -->
+
+  
+  <section class="outro">
+    <article class="outro-inner">
+      <article class="media">
+        <i class="bx bxl-facebook"></i>
+        <i class="bx bxl-instagram"></i>
+      </article>
+      <article class="buttons">
+        <button>Admission Enquiry</button>
+      </article>
+      <button><a href="#top" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()"><i class="bx bx-up-arrow-alt"></i></a></button>
+    </article>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
