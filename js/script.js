@@ -1,5 +1,5 @@
 // dropdown function
-$('.dropdown-trigger').dropdown({hover: true});
+$('.dropdown-trigger').dropdown();
 $('.carousel').carousel();
 $('.collapsible').collapsible();
 $('.sidenav').sidenav();
