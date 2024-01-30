@@ -30,19 +30,21 @@
     <header>
       <nav>
         <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Logo</a>
+          <a href="#!" class="brand-logo">
+            <img src="./images/kidslogo.png" alt="logo">
+          </a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./admission.html">Admission</a></li>
             <li>
-              <a class="dropdown-trigger" data-target="dropdown2"
+              <a class="dropdown-trigger" data-target="programs"
                 >Programs<i class="material-icons right">arrow_drop_down</i></a
               >
             </li>
-            <li><a href="mobile.html">Gallery</a></li>
+            <li><a href="./gallary.html">Gallery</a></li>
             <li>
-              <a class="dropdown-trigger" data-target="dropdown1"
+              <a class="dropdown-trigger" data-target="about"
                 >About<i class="material-icons right">arrow_drop_down</i></a
               >
             </li>
@@ -57,13 +59,13 @@
         <li><a href="./index.html">Home</a></li>
         <li><a href="./admission.html">Admission</a></li>
         <li>
-              <a class="dropdown-trigger" data-target="dropdown2"
+              <a class="dropdown-trigger" data-target="programs"
                 >Programs<i class="material-icons right">arrow_drop_down</i></a
               >
             </li>
         <li><a href="./gallary.html">Gallery</a></li>
         <li>
-          <a class="dropdown-trigger" data-target="dropdown1"
+          <a class="dropdown-trigger" data-target="about"
             >About<i class="material-icons right">arrow_drop_down</i></a
           >
         </li>
@@ -73,54 +75,55 @@
       </ul>
       
       <!-- dropdown content -->
-      <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#!">Legacy</a></li>
-        <li><a href="#!">Mission & Vision</a></li>
+      <ul id="about" class="dropdown-content">
+        <li><a href="./mission.html">Mission & Vision</a></li>
         <li class="divider"></li>
-        <li><a href="#!">Our Approach</a></li>
+        <li><a href="./legacy.html">Our Legacy</a></li>
       </ul>
-      <ul id="dropdown2" class="dropdown-content">
+      <ul id="programs" class="dropdown-content">
         <li><a href="./nursery.html">Nursery</a></li>
         <li><a href="./kintergarder.html">Kindergarten</a></li>
         <li><a href="./daycare.html">Day Care</a></li>
         <li class="divider"></li>
-        <li><a href="./teacherstraning.html">Teachers Training</a></li>
+        <li><a href="./teacherstraning.html">PlayGround</a></li>
       </ul>
     </header>
 
     <!-- map  -->
     <div class="contact-con">
       <section class="google-map">
-      <form class="col">
+      <form class="col" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="c1e67c95-ff1b-4244-ab5d-5fc4a6082f5f">
         <div class="row">
           <div class="input-field col s6">
-            <input id="first_name" type="text" class="validate">
+            <input id="first_name" type="text" class="validate" name="First Name" required/>
             <label for="first_name">First Name</label>
           </div>
           <div class="input-field col s6">
-            <input id="last_name" type="text" class="validate">
+            <input id="last_name" type="text" class="validate" name="Last Name" required/>
             <label for="last_name">Last Name</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input id="first_name" type="text" class="validate">
-            <label for="first_name">Email</label>
+            <input id="email" type="text" class="validate" name="Email" required/>
+            <label for="email">Email</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input id="first_name" type="text" class="validate">
-            <label for="first_name">Mobile</label>
+            <input id="phone" type="text" class="validate" name="Phone Number" required/>
+            <label for="phone">Mobile</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input id="first_name" type="text" class="validate">
-            <label for="first_name">Meassage</label>
+            <input id="Meassage" type="text" class="validate" name="Meassage" required/>
+            <label for="Meassage">Meassage</label>
           </div>
         </div>
-        <a class="waves-effect waves-light btn ">Submit</a>
+        <div class="h-captcha" data-captcha="true"></div>
+        <button class="waves-effect waves-light btn ">Submit</button>
       </form>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.568834142041!2d31.5928398742851!3d4.8438424951317485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17128170e2fe3e6b%3A0x62eacf6c2c29e067!2sJuba%20Kids%20Zone%20-%20American%20School!5e0!3m2!1sen!2sug!4v1700290663883!5m2!1sen!2sug" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
@@ -131,19 +134,18 @@
     <section class="footer">
       <article class="inner-footer">
         <article class="footer-left">
-          <img src="./images/photo(1).ls" alt="logo" />
-          <h4>Juba KIDS ZONE</h4>
+          <img src="./images/kidslogo.png" alt="logo" />
           <p>
-            135, Continental Building,B wing, <br />
-            Worli, Mumbai,Maharashtra 400 018.
+            135, Buluk, <br />
+            Juba, South Sudan
           </p>
         </article>
         <article class="footer-center">
           <ul>
-            <li><a href="">PlayGroup</a></li>
-            <li><a href="">Nursery</a></li>
-            <li><a href="">Kindergarten</a></li>
-            <li><a href="">Teachers Training</a></li>
+            <li><a href="./">PlayGroup</a></li>
+            <li><a href="./nursery.html">Nursery</a></li>
+            <li><a href="./kintergarder.html">Kindergarten</a></li>
+            <li><a href="./daycare.html">Daycare</a></li>
             <li><a href="">Privacy & Policy</a></li>
           </ul>
         </article>
@@ -163,7 +165,7 @@
           <p>10 : 00 am to 06 : 00 pm., Mon to Fri</p>
         </article>
       </article>
-      <p>copyright &copy; Kids Zone, All Rights Reserve.</p>
+      <p>copyright &copy; Juba Kids Zone, All Rights Reserve.</p>
     </section>
     <section class="outro">
       <article class="outro-inner">
@@ -186,5 +188,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/script.js"></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+
   </body>
 </html>

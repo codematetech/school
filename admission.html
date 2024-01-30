@@ -28,19 +28,21 @@
   <header>
     <nav>
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
+        <a href="#!" class="brand-logo">
+          <img src="./images/kidslogo.png" alt="logo">
+        </a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./admission.html">Admission</a></li>
           <li>
-            <a class="dropdown-trigger" data-target="dropdown2"
+            <a class="dropdown-trigger" data-target="programs"
               >Programs<i class="material-icons right">arrow_drop_down</i></a
             >
           </li>
           <li><a href="./gallary.html">Gallery</a></li>
           <li>
-            <a class="dropdown-trigger" data-target="dropdown1"
+            <a class="dropdown-trigger" data-target="about"
               >About<i class="material-icons right">arrow_drop_down</i></a
             >
           </li>
@@ -55,13 +57,13 @@
       <li><a href="./index.html">Home</a></li>
       <li><a href="./admission.html">Admission</a></li>
       <li>
-            <a class="dropdown-trigger" data-target="dropdown2"
+            <a class="dropdown-trigger" data-target="programs"
               >Programs<i class="material-icons right">arrow_drop_down</i></a
             >
           </li>
       <li><a href="./gallary.html">Gallery</a></li>
       <li>
-        <a class="dropdown-trigger" data-target="dropdown1"
+        <a class="dropdown-trigger" data-target="about"
           >About<i class="material-icons right">arrow_drop_down</i></a
         >
       </li>
@@ -71,69 +73,70 @@
     </ul>
     
     <!-- dropdown content -->
-    <ul id="dropdown1" class="dropdown-content">
-      <li><a href="#!">Legacy</a></li>
+    <ul id="about" class="dropdown-content">
       <li><a href="#!">Mission & Vision</a></li>
       <li class="divider"></li>
-      <li><a href="#!">Our Approach</a></li>
+      <li><a href="./legacy.html">Our Legacy</a></li>
     </ul>
-    <ul id="dropdown2" class="dropdown-content">
+    <ul id="programs" class="dropdown-content">
       <li><a href="./nursery.html">Nursery</a></li>
       <li><a href="./kintergarder.html">Kindergarten</a></li>
       <li><a href="./daycare.html">Day Care</a></li>
       <li class="divider"></li>
-      <li><a href="./teacherstraning.html">Teachers Training</a></li>
+      <li><a href="./teacherstraning.html">PlayGround</a></li>
     </ul>
   </header>
   <!-- content -->
   <section class="content">
     <h2>ADMISSION FORM</h2>
-      <form class="col">
+      <form class="col" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="c1e67c95-ff1b-4244-ab5d-5fc4a6082f5f">
         <div class="row my-10">
           <div class="input-field col s12 m6 l4">
-            <input id="first_name" type="text" class="validate">
+            <input id="first_name" type="text" class="validate" name="First Name:" required/>
             <label for="first_name">First Name</label>
           </div>
           <div class="input-field col s12 m6 l4">
-            <input id="last_name" type="text" class="validate">
+            <input id="last_name" type="text" class="validate" name="Last Name:" required/>
             <label for="last_name">Last Name</label>
           </div>
           <div class="input-field col s12 m6 l4">
-            <input id="email" type="email" class="validate">
+            <input id="email" type="email" class="validate" name="Email:" required/>
             <label for="email">Email</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12 m6 l4">
-            <input id="mobile" type="text" class="validate">
+            <input id="mobile" type="text" class="validate" name="Phone Number:" required />
             <label for="mobile">Mobile</label>
           </div>
           <div class="input-field col s12 m6 l4">
-            <input id="country-code" type="text" class="validate">
+            <input id="country-code" type="text" class="validate" name="Country Code: " required/>
             <label for="country-code">Country Code</label>
           </div>
           <div class="input-field col s12 m6 l4">
-            <input id="addition-mobile" type="text" class="validate">
+            <input id="addition-mobile" type="text" class="validate" name="Additional Number: " required/>
             <label for="addition-mobile">Additinal Mobile</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12 m6 l4">
-            <input id="country" type="text" class="validate">
+            <input id="country" type="text" class="validate" name="Country: " required/>
             <label for="country">Country</label>
           </div>
           <div class="input-field col s12 m6 l4">
-            <input id="state" type="text" class="validate">
+            <input id="state" type="text" class="validate" name="State/District: " required/>
             <label for="state">State/District</label>
           </div>
           <div class="input-field col s12 m6 l4">
-            <input id="city" type="text" class="validate">
+            <input id="city" type="text" class="validate" name="City:  " required/>
             <label for="city">City</label>
           </div>
         </div>
+        <div class="h-captcha" data-captcha="true"></div>
         <div class="butt">
           <a class="waves-effect waves-light red btn">Reset</a>
-        <a class="waves-effect waves-light btn ">Submit</a>
+        <button class="waves-effect waves-light btn " type="submit">Submit</button>
         </div>
       </form>
   </section>
@@ -155,5 +158,6 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="./js/script.js"></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
